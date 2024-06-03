@@ -1,0 +1,186 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+      <!-- ----variable assignment---- -->
+
+      //1. using var
+      //2. using let
+      //3. using const
+      let balance;
+      let noofstudents;
+      const nameofclass = "Software Development";
+      //after arrival of a students
+      noofstudents = 1;
+      //after arrival of 2 more students
+      //noofstudents = noofstudents + 2;
+      noofstudents += 2;
+
+      //update the number of students toalert the correct value after a student left
+
+      //after the exit of 1 student
+      noofstudents -= 1;
+      alert(noofstudents);
+
+      console.log(new Date());
+
+      function sayHello() {
+        var kayodeage = 10;
+        var soludoage = 12;
+        var ageoftwostudents = kayodeage + soludoage;
+        alert("Welcome to class");
+
+        console.log(ageoftwostudents);
+      }
+      sayHello();
+
+      const present = false;
+      const day = "Wednesday";
+      if (day === "Monday") {
+        alert("Welcome to a new week!");
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" onclick="sayHello()" value="greet now" />
+    <br />
+    <script>
+      document.write(`${new Date().toDateString()}`);
+      //document.write(`${new Date().toDateString()}`);
+
+      var linebreak = "<br/>";
+      document.write(linebreak);
+      var a = 30;
+      var b = 10;
+      var c = "Test";
+      document.write("a + b = ");
+      result = a + b;
+      document.write(result);
+      document.write(linebreak);
+
+      document.write("a - b = ");
+      result = a - b;
+      document.write(result);
+      document.write(linebreak);
+
+
+      document.write("a / b = ");
+      result = a / b;
+      document.write(result);
+      document.write(linebreak);
+
+      
+      document.write("a % b = ");
+      result = a % b;
+      document.write(result);
+      document.write(linebreak);
+
+
+      document.write("a + b + c = ");
+      result = a + b + c;
+      document.write(result);
+      document.write(linebreak);
+
+     
+    </script>
+    <script> 
+      var a = 10;
+      var b = 20;
+      var linebreak = "<br />";
+
+      document.write("(a == b) => ");
+      result = a == b;
+      document.write(result);
+      document.write(linebreak);
+
+      document.write("(a < b) => ");
+      result = a < b;
+      document.write(result);
+      document.write(linebreak);
+
+      document.write("(a > b) => ");
+      result = a > b;
+      document.write(result);
+      document.write(linebreak);
+    
+    </script>  
+    <script>
+      let age = prompt("enter your age");
+      document.write(age);
+      if (age >= 18) document.write("You can bet");
+      if (age < 18) document.write("You can bet");
+
+      <!--Logic Operators-->
+      var p = true;
+      var q = false;
+
+      document.write("(p && q)");
+      result = p && q;
+      document.write(result);
+      document;
+      write(linebreak);
+
+      document.write("p( || q) => ");
+      result = p || q;
+      document.write(result);
+      document.write(linebreak);
+
+      document.write("!(p && q) => ");
+      result = !(p && q);
+      document.write(result);
+    </script>
+    <script>
+      <!-- bitwise AND & -->
+      document.write(linebreak);
+      document.write(linebreak);
+      document.write(linebreak);
+      var a = 2; //1 0
+      var b = 3; //1 1
+      document.write("(a & b)");
+      result = a & b;
+      //10 & 11
+      //true&&false & true&&true
+      //false or 0            true or 1
+      //false or 0 -->
+      document.write(result);
+      document.write(linebreak);
+
+      alert( `Age data type is $(typeof age}`);
+
+
+      //<!-- CONTROLLED STATEMENT -->
+      //if controlled statement
+      //syntax if(condition to evaluate){ block of statement to execute if the condition evaluate true}
+      if (5 === 5){
+           const betStatis = "won"
+          document.write("Yes");
+          console.log(betStatis)
+    }
+
+    //If else controlled statement
+    //syntax if (condition to evaluate){
+    // block if statement to execute if the condition evaluate false
+    //} else {
+   //block ofm statement to execute if the condition evaluate false
+    //}
+    if (6 === 6){
+        document.write(linebreak);
+        document.write("Yes!!");
+        console.log("6 has it")
+    
+    } else {
+        document.write(linesbreak);
+        document.write("");
+        console.log("6 doesnt have it")
+    }
+
+
+    </script>
+
+
+    </script>
+  </body>
+</html>
